@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -20,7 +21,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-minimalist">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-minimalist">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img class="logo" src="assets/images/logo_apple.png" alt="Logo">
@@ -56,16 +57,45 @@
           </div>
         </div>
       </div>
-    </nav> 
+    </nav>
   </header>
-  <main class="p-3">
+  <main class="p-3 mt-5">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6"><img src="assets/images/flamingo-watercolor-olga-shvartsur.jpg" class="img-fluid pt-3 pb-3" alt="Flamingo"/></div>
-        <div class="col-12 col-md-6"><img src="assets/images/glitter-confetti-on-aqua-gold-pick-up-sticks-pattern-tina-lavoie.jpg" class="img-fluid pt-3 pb-3" alt="Glitter"/></div>
-        <div class="col-12"><img src="assets/images/gold-palm-tree-art-by-linda-woods-linda-woods.jpg" class="img-fluid pt-3 pb-3" alt="Gold Palm"/></div>
-        <div class="col-12 col-md-6"><img src="assets/images/goldfish-love-watercolor-olga-shvartsur.jpg" class="img-fluid pt-3 pb-3" alt="GoldFish"/></div>
-        <div class="col-12 col-md-6"><img src="assets/images/indigo-and-white-pineapples-linda-woods.jpg" class="img-fluid pt-3 pb-3" alt="Indigo"/></div>
+      <div class="button-group filters-button-group">
+        <button type="button" class="btn btn-link is-checked" data-filter="*">Show all</button>
+        <button type="button" class="btn btn-link" data-filter=".portrait">Portrait</button>
+        <button type="button" class="btn btn-link" data-filter=".landscape">Landscape</button>
+      </div>
+      <div class="row grid">
+        <div class="col-12 col-md-6 element-item portrait"><img src="assets/images/home-office-336378.jpg" class="img-fluid pt-3 pb-3"
+            alt="Home-office" />
+          <div class="img-desc">
+            <h5 class="p-5 mt-5 text-center">Click More</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 element-item portrait"><img src="assets/images/notebook-1280538.jpg" class="img-fluid pt-3 pb-3"
+            alt="Notebook" />
+          <div class="img-desc">
+            <h5 class="p-5 mt-5 text-center portrait">Click More</h5>
+          </div>
+        </div>
+        <div class="col-12 element-item portrait"><img src="assets/images/office-336368.jpg" class="img-fluid pt-3 pb-3" alt="Office" />
+          <div class="img-desc">
+            <h5 class="p-5 mt-5 text-center">Click More</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 element-item landscape"><img src="assets/images/office-581131.jpg" class="img-fluid pt-3 pb-3"
+            alt="Office" />
+          <div class="img-desc">
+            <h5 class="p-5 mt-5 text-center">Click More</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 element-item landscape"><img src="assets/images/student-849825.jpg" class="img-fluid pt-3 pb-3"
+            alt="student" />
+          <div class="img-desc">
+            <h5 class="p-5 mt-5 text-center">Click More</h5>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -84,9 +114,43 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+  <script>
+    // external js: isotope.pkgd.js
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+      itemSelector: '.element-item',
+      layoutMode: 'fitRows'
+    });
+    // filter functions
+    var filterFns = {};
+    // bind filter button click
+    $('.filters-button-group').on('click', 'button', function () {
+      var filterValue = $(this).attr('data-filter');
+      // use filterFn if matches value
+      filterValue = filterFns[filterValue] || filterValue;
+      $grid.isotope({ filter: filterValue });
+    });
+    // change is-checked class on buttons
+    $('.button-group').each(function (i, buttonGroup) {
+      var $buttonGroup = $(buttonGroup);
+      $buttonGroup.on('click', 'button', function () {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $(this).addClass('is-checked');
+      });
+    });
+
+  </script>
 </body>
 
 </html>
