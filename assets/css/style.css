@@ -58,6 +58,10 @@ footer{
     animation: portfolio 2s infinite;
 }
 
+button a{
+    color: #005caf;
+}
+
 @keyframes portfolio{
     0% {
         opacity: 0.6;
@@ -65,4 +69,8 @@ footer{
     100% {
         opacity: 0.9;
     }
+}
+
+.breadcrumb{
+    background: #ffffff;
 }
