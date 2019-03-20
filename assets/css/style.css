@@ -19,29 +19,29 @@ body{
     color: #005caf;
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1.5rem;
         padding-left: 1.5rem;
     }
 }
 
-.bg-minimalist{
+.bg-minimalist {
     background-color: #ffffff!important;
     opacity: 0.9;
 }
 
-.btn-link{
+.btn-link {
     color: #005caf;
 }
 
-footer{
+footer {
     color: #005caf;
     font-size: 0.875rem;
     border-top: 1px solid #005caf ;
 }
 
-.img-desc{
+.img-desc {
     position: absolute;
     top: 0;
     left: 0;
@@ -52,17 +52,13 @@ footer{
     color: #005caf;
 }
 
-.img-desc:hover, .img-desc:focus{
+.img-desc:hover, .img-desc:focus {
     opacity: 0.6;
     animation: portfolio;
     animation: portfolio 2s infinite;
 }
 
-button a{
-    color: #005caf;
-}
-
-@keyframes portfolio{
+@keyframes portfolio {
     0% {
         opacity: 0.6;
     }
@@ -71,6 +67,31 @@ button a{
     }
 }
 
-.breadcrumb{
+.breadcrumb {
     background: #ffffff;
+}
+
+.team {
+    background: #81c7d4;
+}
+
+.team .bg-minimalist {
+    background-color: #81c7d4 !important;
+}
+
+.team .navbar-light .navbar-nav .active>.nav-link, 
+.team .navbar-light .navbar-nav .nav-link.active, 
+.team .navbar-light .navbar-nav .nav-link.show, 
+.team .navbar-light .navbar-nav .show>.nav-link, 
+.team .breadcrumb-item.active, 
+.team .breadcrumb-item+.breadcrumb-item::before {
+    color: #ffffff;
+}
+
+.team .navbar-light .navbar-nav .nav-link {
+    color: #005caf;
+}
+
+.team .breadcrumb {
+    background: none;
 }
