@@ -95,3 +95,8 @@ footer {
 .team .breadcrumb {
     background: none;
 }
+
+.rounded-circle{
+    width: 300px;
+    height: 400px;
+}
